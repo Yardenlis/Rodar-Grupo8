@@ -11,16 +11,16 @@ app.listen(PORT, () => {
 app.get('/', (req, res) => {
     res.sendFile(__dirname + '/views/index.html');
 });
-app.get('/', (req, res) => {
+app.get('/productos', (req, res) => {
     res.sendFile(__dirname + '/views/productos.html');
 });
-app.get('/', (req, res) => {
+app.get('/carrito', (req, res) => {
     res.sendFile(__dirname + '/views/carrito.html');
 });
-app.get('/', (req, res) => {
+app.get('/nosotros', (req, res) => {
     res.sendFile(__dirname + '/views/nosotros.html');
 });
-app.get('/', (req, res) => {
+app.get('/contacto', (req, res) => {
     res.sendFile(__dirname + '/views/contacto.html');
 });
 
