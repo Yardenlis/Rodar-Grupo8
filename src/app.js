@@ -25,6 +25,9 @@ app.get('/nosotros', (req, res) => {
 app.get('/contacto', (req, res) => {
     res.sendFile(__dirname + '/views/contacto.html');
 });
+app.get('/login', (req, res) => {
+    res.sendFile(__dirname + '/views/login.html');
+});
 
 
 
