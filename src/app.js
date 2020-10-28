@@ -1,8 +1,10 @@
 const express = require('express');
-const app = express();
 const PORT = 3000;
+const app = express();
 
+app.use(express.static(__dirname + "/public"))
 app.use(express.static('public'));
+
 app.listen(PORT, () => {
     console.log("servidor corriendo " + PORT);
 });
@@ -22,6 +24,9 @@ app.get('/nosotros', (req, res) => {
 });
 app.get('/contacto', (req, res) => {
     res.sendFile(__dirname + '/views/contacto.html');
+});
+app.get('/login', (req, res) => {
+    res.sendFile(__dirname + '/views/login.html');
 });
 
 
