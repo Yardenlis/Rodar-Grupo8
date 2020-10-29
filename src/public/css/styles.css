@@ -354,19 +354,51 @@ body{
     margin: 6px 5px 10px 5px;
 }
 
+
 input{
     
     margin: 10px 5px 10px 5px;
 }
+
+
+
+
+
+.central{
+background-color:white;
+   
+
+}
+.login-containter{
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 7%;
+
+}
+
 .login-div{
     
     flex-wrap: wrap;
     background-color:gray;
-
+}
+.login-text{
+  font-family: sans-serif;
 
 }
 
+.login-form{
+    flex-wrap: wrap;
+    margin-left: 30%;
 
+}
+.login-olvide-clave{
+    flex-wrap: wrap;
+    margin-left: 37%;
+
+    
+}
 
 @media (min-width: 768px){
     .caja{
