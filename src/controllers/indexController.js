@@ -1,7 +1,7 @@
 let indexController = {
     index: function(req,res){
 
-        res.render('index')
+      res.render('index')
     },
     nosotros: function(req,res){
         res.render('nosotros');
@@ -10,6 +10,7 @@ let indexController = {
 
     },
     contacto: function(req,res){
+        res.render('contacto');
 
 
 
