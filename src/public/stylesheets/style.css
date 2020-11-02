@@ -5,12 +5,6 @@
    
     
 }
-/*
-
-HOME Y PRODUCTO DE DETALLE
-
-*/
-
 header {
 
         display: flex;
@@ -36,6 +30,8 @@ li, a {
     color: white;
     text-decoration: none;
     margin: 18px;
+    
+
 }
 
 
@@ -244,7 +240,8 @@ margin: 10px;
 
 /*
 
-LOGIN
+
+------------------------
 
 */
 
@@ -326,7 +323,8 @@ br{
 
 /*
 
-REGISTRO
+
+-----------------------------
 
 */
 
@@ -426,6 +424,7 @@ background-color:white;
         top: 10%;
         left: 15%;
         right: 15%;
+        holA 
     }
     input{
         width:55%;
