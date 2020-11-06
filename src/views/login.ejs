@@ -1,27 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="/stylesheets/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
-    <title>Document</title>
-</head>
+  <%- include('partials/head')%>
 <body>
-  <header>
-      
-  </header>
+  <%- include('partials/header')%>
   <main>
   <div class="central">
   <div class="login-containter">
   <div class="login-div">
     <div class="login-text">
-      <h2> Ingresa tus Datos </h2>
+      <h2 class="tituloDatos"> Ingresa tus Datos </h2>
    </div>
     <form class="login-form">
-       <input class="login-mail" type="mail" name="mail" placeholder="mail">
+       <input class="login-mail" type="mail" name="mail" placeholder="">
        <input class="login-password" type="password" name="password">
-       <input class="login-button" type="button"  value="ingresar" name="ingresar">
+       <input class="login-button" type="button"  value="Ingresar" name="Ingresar">
      </form>
 
   <div class="login-olvide-clave">
@@ -35,7 +27,7 @@
 </div>
 </main>
 
-
+<%- include('partials/footer')%>
 
 </body>
 </html>
