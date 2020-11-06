@@ -13,7 +13,7 @@ header {
         padding: 45px 10%;
         background-color: black;
         height: 100px;
-        margin-top: 20px;
+        margin-top: 5px;
         
 }
 
@@ -81,7 +81,7 @@ li, a {
     width: 100%;
     
 }
-h2 {
+.tituloProducto {
     display: flex;
     justify-content: center;
     color: black;
@@ -130,6 +130,10 @@ margin-top: 25px;
 .titulocombos {
 
     margin-bottom: 15px;
+    display: flex;
+    justify-content: center;
+    color: black;
+    font-size: 35px;
 }
 
 .footer {
@@ -274,48 +278,13 @@ br{
     height: 5px;
 }
 
-.X1{
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    justify-content: flex-end;
-    align-items: flex-end;  
-    margin: 0 10px 0 0;
-}
-
-.X2{
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    justify-content: flex-end;
-    align-items: flex-end;
-    margin: 0 10px 0 0;
-}
 
 
-.X3{
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    justify-content: flex-end;
-    align-items: flex-end;
-    margin: 0 10px 0 0;
-}
 
-.div1{
-    margin: 0 0 0 10px;
-}
 
-.div2{
-    margin: 0 0 0 10px;
-}
-
-.div3{
-    margin: 0 0 0 10px;
-}
 
 .boton{
-    width: 50%;
+    width: 80px;
     flex-direction: column;
     
     
@@ -329,36 +298,89 @@ br{
 */
 
 
+.tituloDatos {
+display: flex;
+justify-content: center;
+color: black;
+font-size: 30px;
+margin-bottom: 2%;
+}
+
+
 body{
     background-color: white;
 }
+.containerVista {
+
+display: flex;
+flex-wrap: wrap;
+flex-direction: row;
+padding: 10px 10px 10px 10px;
+margin-top: 5px;
 
 
-.caja{
+
+}
+.cajaCarrito{
     background-color: #F2F2F2;
-    font-family: sans-serif;
-    position: absolute;
-    top: 15%;
+    font-family: helvetica;
+    top: 30%;
     left: 10%;
     right: 10%;
-    box-sizing: border-box;
-    text-align: center;
+    padding-top: 2%;
+    width: 100%;
+    height: 500px;
+
    }
 
-.titulo{
-    font-size: 18px;
-    margin-bottom: 20px;
+
+.containerProducto{
+
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: flex-start;
+    margin-top: 2%;
+
+
+ 
 }
 
-.boton{
-    margin: 6px 5px 10px 5px;
+.primerProducto{
+    margin: 0 0 0 10px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
 }
 
 
-input{
-    
-    margin: 10px 5px 10px 5px;
+.tituloCarrito{
+    font-family: helvetica;
+    font-size: 30px;
+    justify-content: center;
+    margin-left: 44%;
+
+
+
+
 }
+.eliminarProducto{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 80%;
+    padding: 1%;
+    align-self: center;
+  
+}
+
+.botoncomprarcarrito {
+
+justify-content: center;
+margin-left: 45%;
+margin-top: 225px;
+width: 30px;
+}
+
 
 
 
@@ -374,7 +396,9 @@ background-color:white;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    margin-top: 7%;
+    margin-top: 6%;
+    margin-bottom: 10%;
+   
 
 }
 
@@ -382,23 +406,37 @@ background-color:white;
     
     flex-wrap: wrap;
     background-color:gray;
+    padding: 3%;
+
 }
 .login-text{
-  font-family: sans-serif;
+  font-family: Helvetica;
 
 }
 
 .login-form{
     flex-wrap: wrap;
     margin-left: 30%;
+    
 
 }
 .login-olvide-clave{
     flex-wrap: wrap;
-    margin-left: 37%;
+    margin-left: 35%;
+    margin-top: 2%;
+    align-content: space-around;
 
     
 }
+
+.tituloNosotros {
+    margin-top: 15px;
+    margin-bottom: 30px;
+}
+.textoNosotros {
+    height: 500px;
+}
+
 
 @media (min-width: 768px){
     .caja{
