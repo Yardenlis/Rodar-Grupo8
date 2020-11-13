@@ -33,13 +33,20 @@ li, a {
     
 
 }
+/*
+-------------------------------------------
+index
 
+*/
 
 .navLinks {
 
     list-style: none;
 
 }
+
+body{
+    background-color: white;}
 
 .Buscador {
 
@@ -177,6 +184,10 @@ margin: 10px;
     margin-top: 15px;
 
 }
+/*
+-----------------------------
+detail
+*/
 
 .DetalleProducto {
 
@@ -246,7 +257,7 @@ margin: 10px;
 
 
 ------------------------
-
+Registro 
 */
 
 
@@ -294,7 +305,7 @@ br{
 
 
 -----------------------------
-
+carrito
 */
 
 
@@ -307,9 +318,8 @@ margin-bottom: 2%;
 }
 
 
-body{
-    background-color: white;
-}
+
+
 .containerVista {
 
 display: flex;
@@ -384,7 +394,10 @@ width: 30px;
 
 
 
-
+/*
+-----------------------------
+login
+*/
 
 .central{
 background-color:white;
@@ -428,6 +441,10 @@ background-color:white;
 
     
 }
+/*
+----------------------------------
+Nosotros
+*/
 
 .tituloNosotros {
     margin-top: 15px;
@@ -436,6 +453,10 @@ background-color:white;
 .textoNosotros {
     height: 500px;
 }
+/*
+---------------------------------------------
+
+*/
 
 
 @media (min-width: 768px){
