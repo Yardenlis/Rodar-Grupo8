@@ -1,0 +1,67 @@
+[
+{
+"id":1,
+"marca":"Tern",
+"modelo":"Clasica",
+"categoria":"Paseo",
+"rodado":20,
+"peso":50,
+"precio":90.000,
+"descripcion": " Ideal para pasear los fines de semana con tu chique",
+"estado": 1,
+"imagen":"#"
+},
+{
+"id":2,
+"tipo": "1",
+"marca":"Raleigh",
+"modelo":"Enjoy",
+"categoria":"Urbana",
+"rodado":20,
+"peso":16,
+"precio":83.000,
+"descripcion": " Para moverse en la Ciudad con aglidad",
+"estado": 1,
+"imagen":"#"
+},
+
+{
+"id":3,
+"marca":"raleigh",
+"modelo":"curve",
+"categoria":"Plegale",
+"rodado":20,
+"peso":15,
+"precio":80.000,
+"descripcion": " Bicicleta robusta para uso urbano y de paseo, construida con alumimnio",
+"estado": 1,
+"imagen":"#"
+},
+
+
+{
+"id":4,
+"marca":"Hamtom",
+"modelo":"Monster",
+"categoria":"Montaña",
+"rodado":28,
+"peso":30,
+"precio":200.000,
+"descripcion": " Bicicleta todo terreno, indesctructible amigo!!!",
+"estado": 1,
+"imagen":"#"
+},
+{
+"id":5,
+"marca":"Bike",
+"modelo":"Super Sport",
+"categoria":"Deportiva",
+"rodado":24,
+"peso":19,
+"precio":93.000,
+"descripcion": " Deportiva, liviana y veloz!!!",
+"estado": 1,
+"imagen":"#"
+}
+
+]

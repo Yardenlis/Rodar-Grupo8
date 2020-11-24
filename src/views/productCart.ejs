@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-  <%- include('partials/head')%>
+  <%- include('partials/head',{title:'Carrito'})%>
 
 <body>
   <%- include('partials/header')%>
@@ -13,10 +13,11 @@
   
    <div class="containerProducto">
      <div class = "primerProducto">
-       <p> Bicicleta uno</p><p> cantidad: 1</p><p> $56.000 </p>
-        </div>
+       <p>Marca y Modelo </p><p>
+      <input class="cantidad" type="number" name="cantidad" placeholder="1"></p><p> $56.000 </p>
+      </div>
      <div class = "eliminarProducto">
-      <input id="button" type="button" value="X">
+      <input id="button" type="button" value="Eliminar">
     </div>
   </div>
     <div class="botoncomprarcarrito">
