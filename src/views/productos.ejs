@@ -2,8 +2,10 @@
   hola estos son todos los productos del json
 
   <%for (product of allProducts){%>
-    <%= product.marca%> <br>
-
+    <a href="productos/<%= product.id%>/detail">
+      
+    <%= product.marca %> <br>
+    </a>
   
   <%};%>
   

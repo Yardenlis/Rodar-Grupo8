@@ -1,5 +1,6 @@
 
 
+
 let dataAccess = require('../helpers/dataAccess');
 
 const productsController ={
@@ -12,10 +13,13 @@ const productsController ={
   },
 
   detail: function(req,res){
-
+    const id=req.params.id;
+   dataAccess.getProduct(id);
      res.render('detail');
 
   }
+
+
 
 } 
 module.exports= productsController;
