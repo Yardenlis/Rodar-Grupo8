@@ -32,8 +32,18 @@ const dataAccess = {
 
     setProduct(producto){
         return false;
+       
+       product.id=this.generateId();
+       this.getAllProducts().push(product);
 
      },
+     generateId(){
+         
+         
+          return ++this.getAllProducts().pop().id ;
+
+
+     }
    
     }
     module.exports = dataAccess;
