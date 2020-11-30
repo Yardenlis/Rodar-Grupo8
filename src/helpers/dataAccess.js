@@ -31,10 +31,10 @@ const dataAccess = {
 
 
     setProduct(producto){
-        return false;
+      
        
        product.id=this.generateId();
-       this.getAllProducts().push(product);
+       return this.getAllProducts().push(product);
 
      },
      generateId(){
