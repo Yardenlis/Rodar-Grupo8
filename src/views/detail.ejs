@@ -11,18 +11,13 @@
 
   <main>
 <div>
-<h2 style="margin-top: 30px;">Modelo de la Bicicleta</h2>
+<h2 style="margin-top: 30px;"><%=product.marca%></h2>
 <div class="DetalleProducto">
     <div class="descripcion">
-<p class="textodescripcion">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea blanditiis eius dolorum at nesciunt itaque. 
-    Voluptatibus dolorum ullam, remque ut facere voluptas dicta? Nam a facilis deleniti? Odit, 
-    quia fuga.</p>
+<p class="textodescripcion"><%=product.descripcion%></p>
     <div class="containerPrecio">
-    <a class="precio">50000$</a>
+    <a class="precio"><%product.precio%></a>
 </div>
-    <form action="" class="cantidad">
-        <input type="number" name="cantidad" placeholder="Cantidad" class="cantidad">
-    </form>
     
    </div>
     <div class="containerAgregar">
