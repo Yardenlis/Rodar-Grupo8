@@ -1,3 +1,5 @@
+
+
 // acceso funcion para acceso a datos
 const fs= require('fs');
 const path = require ('path');
@@ -22,10 +24,11 @@ const dataAccess = {
 
 
     getProduct(id){
-        
-       this.getAllProducts().find((product)=>{
-         return (id==product.id? product : null)
+
+       encontrado = this.getAllProducts().find((product)=>{
+         return (id==product.id?product : null);
     });
+    return encontrado;
     },
 
 
