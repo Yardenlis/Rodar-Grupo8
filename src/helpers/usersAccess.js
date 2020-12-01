@@ -33,9 +33,10 @@ const dataAccess = {
 
     setUser(user){
       console.log(user);
-        user.id = ++this.getAllUsers().pop().id ;
-        console.log(user);
-       return this.setAllUsers().push(user);
+      user.id = ++this.getAllUsers().pop().id;
+      todos = this.getAllUsers();
+      todos.push(user);
+      this.setAllUsers(todos);
        
      },
      
