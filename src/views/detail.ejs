@@ -3,9 +3,7 @@
 <body>
     <%- include('partials/header')%>
   
-  <div class="Buscador">
-      <form class="ContainerBuscador">
-    <input class="busqueda" type="search" name="Buscador" placeholder="Buscar">
+  
 </form>
   </div>
 
@@ -23,6 +21,11 @@
     <div class="containerAgregar">
         <button class="agregar">
             <a>Agregar</a>
+        </button>
+    </div>
+    <div class="containerAgregar">
+        <button class="agregar">
+            <a href="/productos/<%=product.id %>/edit"> Editar</a>
         </button>
     </div>
     <div class="descripcion">

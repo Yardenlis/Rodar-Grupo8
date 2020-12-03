@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+    <%- include('partials/head',{title:'Editar-Producto'})%>
+    
+    
+   
+
+<body> 
+    <%- include('partials/header')%>
+      
+    <div  class = "caja"> 
+    
+        <h1 class = "titulo"> Formulario Edicion Producto </h1>
+        <form action = "/productos/<%=product.id %>/edit" method ="POST">
+            <label for = "name"> Marca </label></br>
+            <input type = "text" name ="marca" id ="marca" value="<%=product.marca%>"></input> </br>
+            
+            <label for = "modelo"> Modelo </label></br>
+            <input type = "text" name = "modelo" id = "modelo" value="<%=product.modelo%>"> </input> </br>
+
+            <label for = "categoria"> Categoria </label></br>
+            <input type = "text" name = "categoria" id = "categoria" value="<%=product.categoria%>" ></input> </br>
+           
+             <label for = "rodado"> Rodado </label></br>
+            <input type = "text" name = "rodado" id = "rodado" value="<%=product.rodado%>"></input> </br>
+
+            <label for = "peso"> Peso </label></br>
+            <input type = "text" name = "peso" id = "peso" value="<%=product.peso%>"></input> </br>
+            
+            <label for = "precio"> Precio </label></br>
+            <input type = "text" name = "precio" id = "precio" value="<%=product.precio%>"></input> </br>
+
+            <label for = "descripcion"> Descripcion </label></br>
+            <input type = "text" name = "descripcion" id = "descripcion" value="<%=product.descripcion%>"></input> </br>
+
+            <label for = "rodado"> Estado </label></br>
+            <input type = "text" name = "estado" id = "estado" value="<%=product.estado%>"></input> </br>
+
+
+            <br/>
+            <input type = "submit" value = "Guardar" class = "boton" ></input></br>
+            
+        </form>
+    </div>
+    <footer>
+
+    </footer>
+</body>
+</html>
