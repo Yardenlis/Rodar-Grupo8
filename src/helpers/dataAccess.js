@@ -46,7 +46,16 @@ const dataAccess = {
           return ++this.getAllProducts().pop().id ;
 
 
-     }
+     },
+
+    update(id,data){
+       //allProducts=this.getAllProducts();
+       //updatedProducts=allProducts.map(product)
+           
+      
+      //console.log(data.marca);
+
+    }
    
     }
     module.exports = dataAccess;

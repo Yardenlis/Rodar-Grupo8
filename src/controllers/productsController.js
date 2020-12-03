@@ -17,9 +17,31 @@ const productsController ={
     
    res.render('detail',{product:product});
 
+  },
+
+  edit: function(req,res){
+    const id=req.params.id;
+    product =dataAccess.getProduct(id);
+       res.render('edit-product', {product:product});
+
+  },
+
+  store: function(req,res){
+    const id=req.params.id;
+      //paso el id y el body
+    dataAccess.update(id,req.body);
+      /* req.params.id,
+       req.body.marca,
+       req.body.modelo,
+       req.body.categoria,
+       req.body.rodado,
+       req.body.peso,
+       req.body.precio, 
+       req.body.descripcion,
+       req.body.estado);*/
+       res.redirect('/productos/'+id+'/detail');
+      
   }
-
-
 
 } 
 module.exports= productsController;
