@@ -1,0 +1,5 @@
+/* controla lo relativo  a ABM productos
+  
+
+
+*/
