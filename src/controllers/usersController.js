@@ -1,4 +1,5 @@
 let usersAccess = require('../helpers/usersAccess');
+const bcrypt=require('bcrypt')
 
 
 let usersController= {
@@ -17,12 +18,13 @@ let usersController= {
       * crear el objeto usuario
       * persistirlo
       * */ 
+     pwdHashed= bcrypt.hashSync(req.body.password, 10);
  const user = {
        id:0,
       name:req.body.name,
       last_name:req.body.last_name,
       email:req.body.email,
-      password:req.body.password,
+      password:pwdHashed,
    }
    
    usersAccess.setUser(user);
