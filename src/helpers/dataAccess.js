@@ -3,6 +3,7 @@
 // acceso funcion para acceso a datos
 const fs= require('fs');
 const path = require ('path');
+const { all } = require('../routes/productsRouter');
 
 
  const productsFilePath= path.join(__dirname,'../data/products.json');
@@ -49,13 +50,26 @@ const dataAccess = {
      },
 
     update(id,data){
-       //allProducts=this.getAllProducts();
-       //updatedProducts=allProducts.map(product)
-           
+       allProducts=this.getAllProducts();
+       //console.log(allProducts);
+       updatedProducts=allProducts.map((product)=>{
+         if(product.id==id){
+            product=data;
+            product.id=id;            
+
+         }
+         return product;
+
+      });
+      
+       this.setAllProducts(updatedProducts);
+    }
+      
+
       
       //console.log(data.marca);
 
-    }
+    
    
     }
     module.exports = dataAccess;
