@@ -26,6 +26,12 @@ const productsController ={
 
   },
 
+  create: function(req,res){
+
+         
+
+  },
+
   store: function(req,res){
     const id=req.params.id;
       //paso el id y el body

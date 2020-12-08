@@ -4,16 +4,25 @@
 <body>
   <%- include('partials/header')%>
   <main>
+    <% if (typeof errors != "undefined") { %>
+						
+      <% errors.forEach(error => { %>
+    
+      <p><%= error.msg %> </p>
+    
+      <% }) %>
+    
+      <% } %>
   <div class="central">
   <div class="login-containter">
   <div class="login-div">
     <div class="login-text">
       <h2 class="tituloDatos"> Ingresa tus Datos </h2>
    </div>
-    <form class="login-form">
+    <form action='login' class="login-form" method="POST">
        <input class="login-mail" type="mail" name="mail" placeholder="">
        <input class="login-password" type="password" name="password">
-       <input class="login-button" type="button"  value="Ingresar" name="Ingresar">
+       <input class="login-button" type="submit"  value="Ingresar" name="Ingresar">
      </form>
 
   <div class="login-olvide-clave">

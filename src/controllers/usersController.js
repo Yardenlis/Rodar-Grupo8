@@ -1,12 +1,26 @@
 let usersAccess = require('../helpers/usersAccess');
+const { validationResult } = require('express-validator');
 const bcrypt=require('bcrypt')
 
 
 let usersController= {
    login: function(req,res){
 
-      res.render('login');
+      res.render('login-form');
   },
+
+   loginProcess: function(req,res){
+        const errors=validationResult(req);
+        if(!errors.isEmpty()){
+           return res.render('login-form',{errors: errors.errors})
+          }
+          const allUsers = usersAccess.getAllUsers();
+          console.log(allUsers);
+          const userFound = allUsers.find(user => value==user.mail);
+          req.session.user=userFound;
+          res.send('autenticado!!!');
+
+   },
   register: function(req,res){
 
       res.render('register');

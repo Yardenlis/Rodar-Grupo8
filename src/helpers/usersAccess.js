@@ -5,7 +5,7 @@ const path = require ('path');
 
  const usersFilePath= path.join(__dirname,'../data/users.json');
 
-const dataAccess = {
+const usersAccess = {
     
     getAllUsers(){
         
@@ -48,5 +48,5 @@ const dataAccess = {
      
    
     }
-    module.exports = dataAccess;
+    module.exports = usersAccess;
 
