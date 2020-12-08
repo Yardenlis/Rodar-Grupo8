@@ -4,6 +4,7 @@ var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 let session= require('express-session');
+const userLog= require('./middlewares/localsUserLog')
 
 var app = express();
 
@@ -18,7 +19,7 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 //para poder usar session !
 app.use(session({secret:"Nuestro mensaje secreto....",resave:true, saveUninitialized:true}));
-
+app.use(userLog);// en cada req se llama los MDLW de app
 
 
 // Variables de Rutas

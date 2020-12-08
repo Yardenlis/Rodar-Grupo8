@@ -4,6 +4,12 @@
     <%- include('../partials/nav')%>
     <a href="/users/login"><i class="fas fa-user-alt fa-2x" style="color: aliceblue;"></i></a>
     
+    <% if (userLog) { %>
+      <li class="link"><a href="#"><%=userLog.email%></a></li>
+     
+<% } %>
+
+    
 </header>
 
 <div class="Buscador">

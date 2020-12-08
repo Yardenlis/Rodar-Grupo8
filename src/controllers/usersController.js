@@ -17,8 +17,8 @@ let usersController= {
           const allUsers = usersAccess.getAllUsers();
           console.log(allUsers);
           const userFound = allUsers.find(user => req.body.email==user.email);
-          req.session.user=userFound;
-          res.send('autenticado!!!');
+          req.session.userLog=userFound;
+          res.render('index');
 
    },
   register: function(req,res){
