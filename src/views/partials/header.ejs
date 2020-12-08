@@ -1,11 +1,11 @@
 <header>
 
-    <img src="../images/Logo-rodar.jpg" alt="logo" class="logo" width="90px" height="70px">
+  <a href="/"><img src="../images/Logo-rodar.jpg" alt="logo" class="logo" width="120px" height="90px"></a>
     <%- include('../partials/nav')%>
-    <a href="/users/login"><i class="fas fa-user-alt fa-2x" style="color: aliceblue;"></i></a>
-    
+    <a href="/users/login"><i class="fas fa-user-alt " style="color: aliceblue;"></i></a>
+    <a href="/carrito"><i class="fas fa-shopping-cart " style="color: aliceblue;"></i></a>
     <% if (userLog) { %>
-      <li class="link"><a href="#"><%=userLog.email%></a></li>
+      <a class="linkuserlog"><a href="#"><%=userLog.email%></a>
      
 <% } %>
 
