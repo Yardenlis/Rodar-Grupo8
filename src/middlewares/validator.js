@@ -5,7 +5,7 @@ const bcrypt = require('bcrypt');
 module.exports={
 
 
-    login:[body('mail')
+    login:[body('email')
 
            .notEmpty().withMessage('El mail es obligatorio')
            .bail()

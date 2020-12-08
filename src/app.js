@@ -3,12 +3,7 @@ var express = require('express');
 var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
-
-
-var cartRouter = require('./routes/cartRouter');
-var indexRouter = require('./routes/indexRouter');
-var usersRouter = require('./routes/usersRouter');
-var productsRouter = require('./routes/productsRouter');
+let session= require('express-session');
 
 var app = express();
 
@@ -21,9 +16,17 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
+//para poder usar session !
+app.use(session({secret:"Nuestro mensaje secreto....",resave:true, saveUninitialized:true}));
 
 
 
+// Variables de Rutas
+var cartRouter = require('./routes/cartRouter');
+var indexRouter = require('./routes/indexRouter');
+var usersRouter = require('./routes/usersRouter');
+var productsRouter = require('./routes/productsRouter');
+//Rutas
 app.use('/', indexRouter);
 
 app.use('/users', usersRouter);
@@ -31,6 +34,8 @@ app.use('/users', usersRouter);
 app.use('/carrito', cartRouter);
 
 app.use('/productos', productsRouter);
+
+
 
 
 // catch 404 and forward to error handler
@@ -48,5 +53,10 @@ app.use(function(err, req, res, next) {
   res.status(err.status || 500);
   res.render('error');
 });
+
+
+
+
+
 
 module.exports = app;

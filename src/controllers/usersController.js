@@ -16,7 +16,7 @@ let usersController= {
           }
           const allUsers = usersAccess.getAllUsers();
           console.log(allUsers);
-          const userFound = allUsers.find(user => value==user.mail);
+          const userFound = allUsers.find(user => req.body.email==user.email);
           req.session.user=userFound;
           res.send('autenticado!!!');
 
@@ -33,6 +33,7 @@ let usersController= {
       * persistirlo
       * */ 
      pwdHashed= bcrypt.hashSync(req.body.password, 10);
+     console.log('clave qeu se guarda', pwdHashed);
  const user = {
        id:0,
       name:req.body.name,
