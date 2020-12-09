@@ -1,26 +1,24 @@
 
+<!DOCTYPE html>
+<html lang="en">
+    
+<%- include('partials/head', {title:'Productos'})%>
 
 
-  <%for (product of allProducts){%>
-    <a href="productos/<%= product.id%>/detail">
-      
-    <%= product.marca %> <br>
-    </a>
-     
-   
-
-  <%};%>
 
   <a herf=#>Crear Producto</a>
 			<!-- Show the "in-sale" products -->
 			<% for (product of allProducts) { %>
-			<div class="col-12 col-sm-6 col-lg-3">
-				<section class="product-box">
-					<a href="#">
+			<div >
+				<section>
+          <article class="containerProducto" >
+            
+            <a href="productos/<%= product.id%>/detail">
+            <h2 style="color: black;"><%= product.marca %></h2>
 						<figure class="product-box_image">
 							<img src="<%= product.imagen %>" alt="imagen de producto">
 						</figure>
-						<article class="product-box_data">
+					
 							<h2><%= product.price %></h2>
 					
 							<p><%= product.name %></p>
