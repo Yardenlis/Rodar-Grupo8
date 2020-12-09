@@ -5,8 +5,9 @@ Oferta Productos y Servicios
 Productos
 Nuestro sitios se comercializa Bicletas de diversas tipologias, sean estas 
 1-De Paseo
-2-Montaña
-3-Deportivas
+2-Urbana
+3-Montaña
+4-Deportivas
 y cada uno de sus subtipos
 Tambien, pone a disposicion piezass de las mismas y gadgets. 
 Como valor agregado ofrece packs para cada motivo ( montaña, urbano, competencia).
