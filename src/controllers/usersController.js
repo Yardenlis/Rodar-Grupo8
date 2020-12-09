@@ -18,7 +18,7 @@ let usersController= {
           console.log(allUsers);
           const userFound = allUsers.find(user => req.body.email==user.email);
           req.session.userLog=userFound;
-          res.render('index');
+          res.redirect('/');
 
    },
   register: function(req,res){

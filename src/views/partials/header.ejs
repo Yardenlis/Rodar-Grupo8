@@ -2,15 +2,18 @@
 
   <a href="/"><img src="../images/Logo-rodar.jpg" alt="logo" class="logo" width="120px" height="90px"></a>
     <%- include('../partials/nav')%>
-    <a href="/users/login"><i class="fas fa-user-alt " style="color: aliceblue;"></i></a>
-    <a href="/carrito"><i class="fas fa-shopping-cart " style="color: aliceblue;"></i></a>
-    <% if (userLog) { %>
-      <a class="linkuserlog"><a href="#"><%=userLog.email%></a>
-     
-<% } %>
-
-    
+   
 </header>
+ <div>  
+<% if (userLog) { %>
+  <a class="linkuserlog"><a href="#" style="color: black;"><%=userLog.email%></a>
+  <a href="#"><i class="fas fa-user-alt " style="color: rgb(22, 23, 24);"></i></a>
+ <% } else { %>
+  <a class="linkuserlog"><a href="/users/login" style="color: black;">Iniciar Sesion</a> 
+<a href=><i class="fas fa-user-alt " style="color: rgb(20, 20, 20);"></i></a>
+ <% } %> 
+<a href="/carrito"><i class="fas fa-shopping-cart " style="color: rgb(10, 10, 10);"></i></a>
+</div>
 
 <div class="Buscador">
     <form class="ContainerBuscador">
