@@ -16,7 +16,7 @@
     <div class = "caja"> 
     
         <h1 class = "titulo"> Crea tu cuenta aquí </h1>
-        <form action = "register" method ="POST">
+        <form action = "register" method ="POST" enctype="multipart/form-data">
             <label for = "name"> Nombre </label></br>
             <input type = "text" name ="name" id ="name" ></input> </br>
             
@@ -26,6 +26,8 @@
             <label for = "email"> Correo electrónico </label></br>
             <input type = "email" name = "email" id = "email" ></input> </br>
            
+            <label for="avatar">Avatar</label>
+            <input type="file" name="avatar"></br>
             
            
              <label for = "password"> Contraseña </label></br>

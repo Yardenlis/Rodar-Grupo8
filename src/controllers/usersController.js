@@ -40,6 +40,7 @@ let usersController= {
       last_name:req.body.last_name,
       email:req.body.email,
       password:pwdHashed,
+      avatar:req.files[0].filename
    }
    
    usersAccess.setUser(user);
