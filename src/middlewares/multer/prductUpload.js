@@ -1,11 +1,11 @@
 const multer = require('multer');
 const path = require('path');
 
-const publicImagesPath = path.resolve(__dirname, '../../../public/images');
+const publicImagesPath = path.resolve(__dirname, '../../public/images');
 
 const storage = multer.diskStorage({
     destination: function (req, file, cb) {
-        cb(null, path.resolve(publicImagesPath, 'users'));
+        cb(null, path.resolve(publicImagesPath, 'products'));
     },
     filename: function (req, file, cb) {
         cb(null, `${file.fieldname} - ${Date.now()}${path.extname(file.originalname)}`);

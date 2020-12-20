@@ -27,24 +27,25 @@ const productsController ={
   },
 
   create: function(req,res){
-
+        res.send('creando get');
          
 
   },
 
-  store: function(req,res){
+  update: function(req,res){
     const id=req.params.id;
-      //paso el id y el body
-    dataAccess.update(id,req.body);
-      /* req.params.id,
-       req.body.marca,
-       req.body.modelo,
-       req.body.categoria,
-       req.body.rodado,
-       req.body.peso,
-       req.body.precio, 
-       req.body.descripcion,
-       req.body.estado);*/
+     let product=dataAccess.getProduct(id);
+       product.mcarca=req.body.marca;
+       product.modelo=req.body.modelo;
+       product.catgoria=req.body.categoria;
+       product.rodado= req.body.rodado;
+       product.peso=req.body.peso;
+       product.precio=req.body.precio; 
+       product.descripcion=req.body.descripcion;
+       product.estado=req.body.estado;
+       product.imagen= req.files[0]?req.files[0].filename:product.image;
+      
+       dataAccess.update(id,product);
        res.redirect('/productos/'+id+'/detail');
       
   }
