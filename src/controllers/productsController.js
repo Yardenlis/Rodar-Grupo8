@@ -8,6 +8,12 @@ const productsController ={
       // console.log(allProducts);
     res.render('productos',{allProducts:allProducts})
   },
+  adminList : function(req,res){
+      
+    let allProducts = dataAccess.getAllProducts();
+      // console.log(allProducts);
+    res.render('adminList',{allProducts:allProducts})
+  },
 
   detail: function(req,res){
     const id=req.params.id;

@@ -7,6 +7,7 @@ const productUpload=require('../middlewares/multer/prductUpload');
 router.get('/',productsController.list);
 
 
+
 router.get('/:id/detail',productsController.detail);
 
 router.get('/:id/edit',productsController.edit);
