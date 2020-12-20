@@ -40,11 +40,20 @@ let usersController= {
       last_name:req.body.last_name,
       email:req.body.email,
       password:pwdHashed,
+      profile:0,
       avatar:req.files[0].filename
    }
    
    usersAccess.setUser(user);
    res.redirect('/');
+
+  },
+
+  admin:function(req,res){
+     
+       res.render('admin');
+
+
 
   },
   

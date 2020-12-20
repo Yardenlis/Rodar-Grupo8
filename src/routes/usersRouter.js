@@ -15,4 +15,9 @@ router.post('/login',validator.login,usersController.loginProcess )
 router.get('/register', usersController.register);
 router.post('/register',userUpload.any(), usersController.store);
 
+
+
+router.get('/admin', usersController.admin);
+
+
 module.exports = router;
