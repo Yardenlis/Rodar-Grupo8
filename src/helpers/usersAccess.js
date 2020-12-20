@@ -15,7 +15,7 @@ const usersAccess = {
     },
     setAllUsers(allUsers){
     
-     const allUsersJson= JSON.stringify(allUsers,null,"");
+     const allUsersJson= JSON.stringify(allUsers,null,2);
      fs.writeFileSync(usersFilePath,allUsersJson);
 
 

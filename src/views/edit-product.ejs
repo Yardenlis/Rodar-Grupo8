@@ -11,7 +11,7 @@
     <div  class = "caja"> 
     
         <h1 class = "titulo"> Formulario Edicion Producto </h1>
-        <form action = "/productos/<%=product.id %>/edit" method ="POST">
+        <form action = "/productos/<%=product.id %>/edit" method ="POST" enctype="multipart/form-data">
             <label for = "name"> Marca </label></br>
             <input type = "text" name ="marca" id ="marca" value="<%=product.marca%>"></input> </br>
             
@@ -35,7 +35,9 @@
 
             <label for = "rodado"> Estado </label></br>
             <input type = "text" name = "estado" id = "estado" value="<%=product.estado%>"></input> </br>
-
+            
+            <label for="imagen">Imagen</label>
+            <input type="file" name="imgen">
 
             <br/>
             <input type = "submit" value = "Guardar" class = "boton" ></input></br>
