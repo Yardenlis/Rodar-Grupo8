@@ -11,12 +11,16 @@
 <div>
 <h2 style="margin-top: 30px;"><%=product.marca%></h2>
 <div class="DetalleProducto">
+    <div>
+        <img class="fotodescripcion" src="/images/products/<%=product.imagen%>" alt="product-image">
+        </div>
+        
     <div class="descripcion">
 <p class="textodescripcion"><%=product.descripcion%></p>
     <div class="containerPrecio">
     <a class="precio"><%product.precio%></a>
 </div>
-    
+
    </div>
     <div class="containerAgregar">
         <button class="agregar">
@@ -28,9 +32,7 @@
             <a href="/productos/<%=product.id %>/edit"> Editar</a>
         </button>
     </div>
-    <div class="descripcion">
-    <img class="fotodescripcion" src="<%=product.image%>" alt="modeloBicicleta">
-    </div>
+    
 </div>
 
 </div>

@@ -5,6 +5,16 @@
     "last_name": "Grammaldo",
     "email": "lgramaldo@gmail.com",
     "password": "$2b$10$MdZm4UUtLQjgGqJ0F4ZwVO2vVeQbX/VhH1uFmv2.vbdksuuSlu8WG",
+    "profile": 1,
     "avatar": "avatar - 1608413997051.jpg"
+  },
+  {
+    "id": 4,
+    "name": "Catalina",
+    "last_name": "grammaldo",
+    "email": "cgrammaldo@gmail.com",
+    "password": "$2b$10$Orjn28WZi6UQT2iYrxtG5OqCkZCsoS84radUMPx6ybHz9Kk0jaoka",
+    "profile": 0,
+    "avatar": "avatar - 1608461687849.jpg"
   }
 ]

@@ -4,5 +4,10 @@
         <li class="link"><a href="/productos">Productos</a></li>
         <li class="link"><a href="/nosotros">Nosotros</a></li>
         <li class="link"><a href="/contacto">Contacto</a></li>
+        <%if(userLog) {
+             if(userLog.profile===1){%>
+                  <li class="link"><a href="/users/admin">Admin</a></li>
+         <%}
+        }%>
     </ul>
 </nav>
