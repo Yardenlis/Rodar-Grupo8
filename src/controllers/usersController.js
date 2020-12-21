@@ -53,9 +53,14 @@ let usersController= {
 
         res.render('userProfile');
 
-  }
+  },
 
- 
+  logout:function(req,res){
+     
+   req.session.destroy();
+   return res.redirect('/');
+
+  }
 
 
 }

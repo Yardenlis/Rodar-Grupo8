@@ -15,9 +15,9 @@ router.post('/login',validator.login,usersController.loginProcess )
 router.get('/register', usersController.register);
 router.post('/register',userUpload.any(), usersController.store);
 
-router.get('profile',usersController.showProfile);
+router.get('/profile',usersController.showProfile);
 
-
+router.get('/logout', usersController.logout);
 
 
 module.exports = router;

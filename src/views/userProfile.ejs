@@ -1,16 +1,18 @@
-!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="es">
 <!-- Include Head -->
-<%- include('../partials/head', { title: userLog.email }) %>
-
+<%- include('partials/head', { title: userLog.email }) %>
+<%- include('partials/header')%>
 <body>
   
   
-            <h2><%= userLog.email %></h2> <br>
-            <img src="/images/users/<%= userLog.avatar %> " alt="">
-              
+    <h2>Nombre:<%= userLog.name %></h2> <br>
+    <h2>Apellido:<%= userLog.last_name%></h2> <br>
+    <h2>Email:<%= userLog.email %></h2> <br>
+    <img height="400" width="400"  src="/images/users/<%= userLog.avatar %> " alt="">
+      
 
-  
+
 </body>
 
 </html>
