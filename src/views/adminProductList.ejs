@@ -6,11 +6,14 @@
   <%- include('partials/header')%>
    
   <% for (product of allProducts){ %>
+    
+    <%=product.marca %> - <%=product.modelo %>
+   <a href="/productos/<%=product.id %>/edit"> Editar</a>
+   <br>
+    
+ 
+  
 
-  <li class="link"><a href="/productos/<admin">Editar Productos</a></li>
-  <li class="link"><a href="/nosotros">Editar usuarios</a></li>
-  <li class="link"><a href="/contacto"></a></li>
-
-
+  <% } %> 
 </body>
 </html>  

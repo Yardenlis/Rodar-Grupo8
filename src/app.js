@@ -23,10 +23,11 @@ app.use(userLog);// en cada req se llama los MDLW de app
 
 
 // Variables de Rutas
-var cartRouter = require('./routes/cartRouter');
-var indexRouter = require('./routes/indexRouter');
-var usersRouter = require('./routes/usersRouter');
+var cartRouter     = require('./routes/cartRouter');
+var indexRouter    = require('./routes/indexRouter');
+var usersRouter    = require('./routes/usersRouter');
 var productsRouter = require('./routes/productsRouter');
+var adminRouter    = require('./routes/adminRouter');
 //Rutas
 app.use('/', indexRouter);
 
@@ -35,6 +36,8 @@ app.use('/users', usersRouter);
 app.use('/carrito', cartRouter);
 
 app.use('/productos', productsRouter);
+
+app.use('/admin', adminRouter);
 
 
 
