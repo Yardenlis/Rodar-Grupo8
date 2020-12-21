@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+  <%- include('partials/head',{title:'Admin List'})%>
+<body>
+
+  <%- include('partials/header')%>
+   
+  <% for (product of allProducts){ %>
+    
+    <%=product.marca %> - <%=product.modelo %>
+   <a href="/productos/<%=product.id %>/edit"> Editar</a>
+   <br>
+    
+ 
+  
+
+  <% } %> 
+</body>
+</html>  

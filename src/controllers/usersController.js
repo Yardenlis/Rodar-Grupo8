@@ -33,7 +33,7 @@ let usersController= {
       * persistirlo
       * */ 
      pwdHashed= bcrypt.hashSync(req.body.password, 10);
-     console.log('clave qeu se guarda', pwdHashed);
+     //console.log('clave qeu se guarda', pwdHashed);
  const user = {
        id:0,
       name:req.body.name,
@@ -49,14 +49,13 @@ let usersController= {
 
   },
 
-  admin:function(req,res){
-     
-       res.render('admin');
+  showProfile:function(req,res){
 
+        res.render('userProfile');
 
+  }
 
-  },
-  
+ 
 
 
 }

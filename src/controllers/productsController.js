@@ -8,7 +8,7 @@ const productsController ={
       // console.log(allProducts);
     res.render('productos',{allProducts:allProducts})
   },
-
+  
   detail: function(req,res){
     const id=req.params.id;
     product =dataAccess.getProduct(id);
